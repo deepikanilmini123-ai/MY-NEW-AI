@@ -1,0 +1,5 @@
+Flask
+Flask-CORS
+duckduckgo_search
+firebase-admin
+gunicorn

@@ -180,7 +180,7 @@ class RobotAIEngine:
 # 4. FLASK API
 # ==========================================
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 firebase = FirebaseManager()
 search = WebSearchEngine(max_results=2)
